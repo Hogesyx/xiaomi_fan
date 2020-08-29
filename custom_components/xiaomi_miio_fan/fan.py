@@ -298,7 +298,7 @@ async def async_setup_platform(hass, config, async_add_devices, discovery_info=N
 
         fan = FanP5(host, token, model=model)
         device = XiaomiFanP5(name, fan, model, unique_id, retries)
-    elif model == MOEDL_FAN_1C:
+    elif model == MODEL_FAN_1C:
         from .fan_1c import Fan1C
         
         fan = Fan1C(host, token)
